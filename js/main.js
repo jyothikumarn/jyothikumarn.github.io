@@ -130,7 +130,7 @@ enableDrag:false
 
 		// close menu clicking outside the menu itself
 		siteBody.on('click', function(e){		
-			console.log(event.target.id)
+			//console.log(event.target.id)
 			if( !$(e.target).is('#menu-nav-wrap, #header-menu-trigger, #header-menu-trigger span') ) {
 				menuTrigger.find("button").removeClass("mopen")
 				menuTrigger.removeClass('is-clicked');
@@ -149,8 +149,8 @@ enableDrag:false
 			var target = this.hash,
 			$target    = $(target);
 	 		console.log('normal scroll');
-		 	//e.preventDefault();
-		 	//e.stopPropagation();	   	
+		 	e.preventDefault();
+			e.stopPropagation();	   	
 
 	    	$('html, body').stop().animate({
 	       	'scrollTop': $target.offset().top
