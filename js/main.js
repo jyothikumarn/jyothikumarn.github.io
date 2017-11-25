@@ -148,9 +148,8 @@ enableDrag:false
 		$('.smoothscroll').on('click', function (e) {
 			var target = this.hash,
 			$target    = $(target);
-	 		console.log('normal scroll');
-		 	//e.preventDefault();
-			//e.stopPropagation();	   	
+		 	e.preventDefault();
+			e.stopPropagation();	   	
 
 	    	$('html, body').stop().animate({
 	       	'scrollTop': $target.offset().top
