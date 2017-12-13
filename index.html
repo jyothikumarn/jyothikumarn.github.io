@@ -592,16 +592,35 @@ Successfully completed B.F.A, specialized in Applied Arts from SVCFA affiliated 
         <!-- end section-intro -->
         <div class="row contact-form">
             <div class="col-twelve">
-                
-            	<form method="POST" action="http://formspree.io/debashish.sahu@imaginea.com">
- <input type="email" name="email" placeholder="Your email">
- <input type="text" name="name" placeholder="Your name">
- <textarea name="message" placeholder="Your message"></textarea>
- <button type="submit">Send</button>
-</form>
+                <!-- form -->
+                <form name="contactForm" id="contactForm" method="post">
 
+                    <div class="form-field animate-this">
+                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                    </div>
+                    <div class="form-field animate-this">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                    </div>
+                    <div class="form-field animate-this">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                    </div>
+                    <div class="form-field animate-this">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
+                    </div>
+                    <div class="form-field animate-this">
+                        <button class="submitform">Submit</button>
+                        <div id="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
 
-                
+                </form>
+                <!-- Form End -->
                 <!-- contact-warning -->
                 <div id="message-warning"></div>
                 <!-- contact-success -->
