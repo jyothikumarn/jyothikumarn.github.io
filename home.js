@@ -1,3 +1,27 @@
+ $("#sendMessage").on("click", function() {
+    message = $("#contactForm").serialize();
+    var userName = $("#contactName").val();
+    var userEmail = $("#contactEmail").val();
+    var userSubject = $("#contactSubject").val();
+    var userDescription = $("#contactMessage").val();
+
+    $.ajax({
+        url: "//formspree.io/mrpixel.in@gmail.com", 
+        type: "POST",
+        data: {name: userName, email: userEmail, subject: userSubject, description: userDescription},
+        dataType: "json",
+        success: function(data){
+          alert('Thanks for the email, we\'ll be in touch promptly.');
+          $("#contactName").val("");
+          $("#contactEmail").val("");
+          $("#contactSubject").val("");
+          $("#contactMessage").val("");
+        }
+    });
+    return false;
+});
+
+
  function $i(id) {
      return document.getElementById(id);
  }
