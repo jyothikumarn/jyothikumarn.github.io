@@ -1339,8 +1339,8 @@ header .header-logo a {
 #header-menu-trigger {
 	display: block;
 	position: fixed;
-	right: 60px;
-	top: 48px;
+	right: 25px;
+	top: 40px;
 	height: 42px;
 	width: 42px;
 	line-height: 42px;
@@ -1463,7 +1463,6 @@ box-shadow: 0px -10px, 0 -5px, -10px 0, -5px 0, 5px 0,10px 0, 0px 0, 0 10px, 0 5
 	line-height: 1.5;
 	margin-bottom: 1.5rem;
 	float:left;
-	margin-left: 30px;
     color: #fed106;
 }
 #menu-nav-wrap h3 img{
@@ -3105,8 +3104,8 @@ footer .footer-social li:last-child {
 #go-top {
 	position: fixed;
 	bottom: 42px;
-	right: 30px;
-	z-index: 700;
+	right: 25px;
+	z-index: 699;
 	display: none;
 }
 
@@ -3114,9 +3113,9 @@ footer .footer-social li:last-child {
 	text-decoration: none;
 	border: 0 none;
 	display: block;
-	height: 63px;
-	width: 60px;
-	line-height: 63px;
+	height: 42px;
+	width: 42px;
+	line-height: 42px;
 	text-align: center;
 	background-color: #000000;
 	color: #888;
@@ -3151,8 +3150,8 @@ footer .footer-social li:last-child {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	#go-top {
-		bottom: 0;
-		right: 0;
+	    bottom: 40px;
+    	right: 25px;
 	}
 	.scroll-down-begin{
 		display: none;
