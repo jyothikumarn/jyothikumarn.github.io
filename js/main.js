@@ -242,7 +242,6 @@ enableDrag:false
 	                  	if (!animationEfx) {
 			                 	animationEfx = defAnimationEfx;	                 	
 			               }
-
 			              	setTimeout( function () {
 									el.addClass(animationEfx + ' animated');
 									el.removeClass('item-animate');
