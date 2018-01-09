@@ -400,9 +400,11 @@ $("body").on("contextmenu", "img", function(e) {
 		initilizeFilter();
 
 
-		setTimeout(function(){
-    		$(".filter_link_area .firstActive a").trigger('click', function(e){})
-		},1000)
+		// setTimeout(function(){
+		// 	//if(window)
+  //   		$(".filter_link_area .firstActive a").trigger('click', function(e){console.log("qwerty")})
+		// },1000);
+
 	})();
  
 
