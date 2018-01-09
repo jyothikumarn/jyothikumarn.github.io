@@ -146,6 +146,9 @@ enableDrag:false
 	var ssSmoothScroll = function() {
 
 		$('.smoothscroll').on('click', function (e) {
+			$('#menu-nav-wrap .nav-list li').removeClass('current');
+			$(this).parent().addClass('current');
+
 			var target = this.hash,
 			$target    = $(target);
 		 	e.preventDefault();
@@ -358,6 +361,7 @@ var initilizeFilter=function () {
 var $grid = $('.bricks-wrapper').isotope({
  // options
 });
+
 // filter items on button click
 $('.filter_link_area').on( 'click', 'a', function(e) {
 e.preventDefault();
@@ -395,6 +399,10 @@ $("body").on("contextmenu", "img", function(e) {
 		ssBackToTop();
 		initilizeFilter();
 
+
+		setTimeout(function(){
+    		$(".filter_link_area .firstActive a").trigger('click', function(e){})
+		},1000)
 	})();
  
 

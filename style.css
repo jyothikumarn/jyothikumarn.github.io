@@ -474,6 +474,11 @@ canvas{
 .site-navbar li a:focus {
     background: #1b93c7;
 }
+
+#menu-nav-wrap .nav-list li.current a{
+    color: #fed106;
+}
+
 .navbar-brand {
     padding-top: 0;
 }
