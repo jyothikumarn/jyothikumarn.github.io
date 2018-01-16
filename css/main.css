@@ -1613,6 +1613,7 @@ box-shadow: 0px -10px, 0 -5px, -10px 0, -5px 0, 5px 0,10px 0, 0px 0, 0 10px, 0 5
 	-moz-background-size: cover;
 	background-size: cover;
 	min-height: 804px;
+	text-align: center;
 	
 }
 
@@ -1722,7 +1723,7 @@ position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    margin-left: -10px;
+    /*margin-left: -10px;*/
     color: #fed106;
     opacity: 0;
 
