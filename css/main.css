@@ -2439,9 +2439,17 @@ transform: translateY(-15px);
 
 #portfolio .bricks-wrapper .brick {
 	float: left;
-	width: 50%;
+	/*width: 50%;*/
 	padding: 0;
 	margin: 0;
+	width: 33.3%;
+    border: 5px solid transparent;
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+            background-clip: padding-box;
+    /*-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;*/
 }
 
 #portfolio .bricks-wrapper .brick:nth-child(2n+1) {
@@ -2605,6 +2613,19 @@ transform: translateY(-15px);
 	-ms-transform: translateX(0);
 	transform: translateX(0);
 }
+
+@media only screen and (max-width: 768px){
+#portfolio .bricks-wrapper .brick {
+    width: 50%;
+}
+}
+
+@media only screen and (max-width: 600px){
+#portfolio .bricks-wrapper .brick {
+    width: 100%;
+}
+}
+
 
 /* ------------------------------------------------------------------- 
  * Light Gallery Overrides - (_layout.css) 
